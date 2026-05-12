@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Access</title>
+  <link rel="icon" href="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg">
+<link rel="stylesheet" href="style.css">
+
+<style>
+  
+                .pop2, .alert{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height:100%;
+                    background: rgba(0,0,0,0.8);
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .pop-box3{
+                    background-color:#e5f6df;;
+                        margin: 15% auto;
+                        padding: 20px;
+                        border-radius: 8px;
+                        width: 300px;
+                        text-align: center;
+                        box-shadow: o 4px 8px rgba(0,0,0,0.2);
+                }
+                    .pop-box3 h3{
+                        margin: 10px 0;
+                        font-size: 20px;
+                        color: #333;
+                    }
+                    .pop-box3 p{
+                        font-size: 14px;
+                        color: #333333
+                        
+                    }
+
+                
+.pop-box3 button{
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: none;
+    background: #2c6e49;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pop-box button:hover{
+    background: #1f4f35;
+}
+</style>
+</head>
+
+<body>
+
+ <header>
+                             <div class="nav-logo">
+                  <img src="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg" width="100px" class="nav-logo"  ><br>
+                </div>
+                    <h1>Juliet's Agricultural Enterprise</h1>
+
+                    <nav>
+                
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About us</a>
+                        
+                        <a href="knowledge.html">Knowledge Center</a>
+                        <a href="market acess.html">Market Acess</a>
+                        <a href="contactus.html">Contact Us</a>
+                    </nav>
+                </header>
+
+
+<div class="hero">
+<h1>Market Access for our Farmers</h1>
+<p>Connect farmers directly with buyers and markets across the world</p>
+<button onclick="Openpop()">View Market Prices</button>
+
+</div> 
+<div id="pop1" class="pop2">
+  <div class="pop-box3">
+    <h3>❌Prices are not yet updated</h3>
+    <p>Contact buyers for more info!!!</p>
+    <button onclick="Closepop()">OK</button>
+  </div>
+</div>
+
+<script>
+  function Openpop(){
+    document.getElementById("pop1").style.display ="flex"
+  }
+  function Closepop(){
+    document.getElementById("pop1").style.display = "none"
+  }
+  
+</script>
+
+
+<!--steps section--> 
+<section>
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. List of Products</h3>
+<p>Farmers upload crops available for sale.</p>
+</div>
+
+<div class="step">
+<h3>2. Connect Buyers</h3>
+<p>Buyers browse and contact farmers across the world.</p>
+</div>
+
+<div class="step">
+<h3>3. Agree Price</h3>
+<p>Negotiable prices for our products.</p>
+</div>
+
+<div class="step">
+<h3>4. Arrange Delivery</h3>
+<p>Farmers make free products deliveries for all customers.</p>
+</div>
+
+</div>
+</section>
+<!--table section-->
+<section>
+<h2>Market Prices</h2>
+
+<table>
+<tr>
+<th>Crop</th>
+<th>Average Price</th>
+<th>Market</th>
+<th>Updated</th>
+</tr>
+
+<tr>
+<td>Maize</td>
+<td>UGX 700@kg</td>
+<td>Pallisa</td>
+<td>Today</td>
+</tr>
+
+<tr>
+<td>Beans</td>
+<td>UGX 1,100@kg</td>
+<td>Mbale</td>
+<td>Today</td>
+</tr>
+
+<tr>
+<td>Coffee</td>
+<td>UGX 8,000@kg</td>
+<td>Mityana</td>
+<td>Today</td>
+</tr>
+
+<tr>
+<td>Banana</td>
+<td>UGX 900@cluster</td>
+<td>Butaleja</td>
+<td>Today</td>
+</tr>
+
+</table>
+</section>
+
+<section>
+<h2>Featured Buyers</h2>
+
+<div class="buyers">
+
+<div class="buyer-card">
+<h3>FreshFoods Ltd</h3>
+<p>Location: Mbale</p>
+<p>Buying: Maize, Beans</p>
+<p>Min Order: 55kgs</p>
+<button>Contact Buyer</button>
+</div>
+
+<div class="buyer-card">
+<h3>GreenMarket Traders</h3>
+<p>Location: Mombasa</p>
+<p>Buying: Coffee, Rice</p>
+<p>Min Order: 55kgs</p>
+<button>Contact Buyer</button>
+</div>
+
+</div>
+</section>
+
+<!--form section-->
+<section>
+<h2>Sell your Products</h2>
+
+<form id="produceform">
+<input type="text" id="farmer'sname" placeholder="Farmer Name">
+
+<select id="crop">
+<option>Select Crop</option>
+<option>Coffee</option>
+<option>Beans</option>
+<option>Maize</option>
+<option>Bananas</option>
+</select>
+
+<input type="number" id="quantity" placeholder="Quantity (kg)">
+<input type="text" id="location" placeholder="Location">
+<input type="text" id="phone" placeholder="Phone number">
+
+<button type="submit" class="submit">Submit Product</button>
+</form>
+
+<div id="popup3" class="popup4">
+  <div id="pop-box5">
+    <h3>Submission is Successful 👍</h3>
+    <p>You will be notified about the buyer</p>
+    <button onclick="document.getElementById('popup3').style.display='none'" class="buttonclick">❌Close</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById("produceform").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let name = document.getElementById("farmername").value.trim();
+    let crop = document.getElementById("crop").value;
+    let quantity = document.getElementById("quantity").value;
+    let location = document.getElementById("location").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    if (name === ""){
+      alert("Farmer name is required");
+      return;
+    }
+    if (crop ===""){
+      alert("Please select the group");
+      return;
+    }
+    if (quantity <=0){
+      alert("Quantity must be greater than 0");
+      return;
+    }
+    if (location ===""){
+      alert("Location is required");
+      return;
+    }
+    document.getElementById("popup3").style.display = "flex";
+
+
+  })
+
+
+</script>
+</div>
+
+</section>
+
+<footer style="background-color:#1b5e20;;">
+<p>© JULIET'S AGRIC ENTERPRISE |Empowering Ugandan farmers</p>
+</footer>
+
+</body>
+</html>

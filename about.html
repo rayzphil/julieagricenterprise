@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JULIET'S AGRICULTURAL ENTERPRISE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JULIET'S AGRICULTURAL ENTERPRISE</title>
+
+      <link rel="icon" href="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg">
+    <style>
+  /* RESET + BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #f4f9f4, #e8f5e9);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header{
+                        background-color: #1b5e20;
+                        color: #f5f5f0;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: space space-between;
+                        align-items: center;
+                    }
+                  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #a5d6a7;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* MAIN CARD */
+.about-section {
+    max-width: 900px;
+    margin: 60px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* IMAGE */
+.about-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.4s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.03);
+}
+
+/* HEADINGS */
+h1 {
+    color: #2d5a27;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #1b5e20;
+    position: relative;
+}
+
+/* Section underline */
+h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #4caf50;
+    display: block;
+    margin: 8px auto;
+}
+
+/* LISTS */
+ul {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+.contact-btn {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #2d5a27, #4caf50);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+footer {
+    background-color: brown;
+    color: white;
+    text-align: left;
+    padding: 40px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .about-section {
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+
+
+         header{
+                        background-color: #1b5e20;
+                        color: #f5f5f0;
+                        padding: 15px 40px;
+                        display: flex;
+                        justify-content: space space-between;
+                        align-items: center;
+                    }
+                    header h1{
+                        margin: 0;
+                        font-size: 22;
+                    }
+                    nav a{
+                        color: white;
+                        margin-left: 20px;
+                        text-decoration: none;
+                        
+                    }
+
+                      footer{
+                        background-color: #1b5e20;
+                        color: white;
+                        text-align: center;
+                        padding: 15px;
+                        margin-top: 30px;
+                    }
+</style>
+</head>
+<body>
+
+
+  <header>
+                             
+                  <img src="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg" width="100px" class="nav-logo"  ><br>
+                
+                    <h1 style="color: red;"> JULIET'S AGRICULTURAL ENTERPRISE </h1>
+
+                    <nav>
+                
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About us</a>
+                        
+                        <a href="knowledge.html">Knowledge Center</a>
+                        <a href="market acess.html">Market Acess</a>
+                        <a href="contactus.html">Contact Us</a>
+                    </nav>
+                </header>
+
+     </nav>
+<div class="about-section">
+    <img src="images/farm-tractor-cultivating-field-organic-agriculture-concept-431356601.webp" alt="Local farm" class="about-img">
+
+    <h1>Empowering Farmers Through Innovative Solutions</h1>
+    <p>
+        We are committed to building a thriving agricultural future by combining traditional 
+        farming practices with modern digital solutions. Our platform supports farmers across 
+        Uganda to increase productivity, access markets, and improve livelihoods.
+    </p>
+
+    <hr>
+
+    <h2>Who We Are</h2>
+    <p>
+        Juliet's Agric Enterprise is a farmer-centered organization focused on supporting 
+        smallholder farmers through technology, training, and market integration. We work closely 
+        with rural communities to ensure sustainable agricultural growth and food security.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+        To bridge the gap between traditional farming and modern technology by providing accessible 
+        digital tools, training, and market opportunities that empower farmers to maximize yields 
+        and income.
+    </p>
+
+    <h2>Our Vision</h2>
+    <p>
+        To create a future where every farmer in Uganda has access to the knowledge, tools, and 
+        markets needed to thrive in a modern agricultural economy.
+    </p>
+
+    <h2>Our Core Values</h2>
+    <ul>
+        <li><strong>Innovation:</strong> Leveraging modern technology in agriculture.</li>
+        <li><strong>Community:</strong> Supporting and uplifting local farmers.</li>
+        <li><strong>Sustainability:</strong> Protecting soil and future generations.</li>
+        <li><strong>Transparency:</strong> Building trust through openness.</li>
+        <li><strong>Farmer-Centered Development:</strong> Putting farmers first in every solution.</li>
+    </ul>
+
+    <h2>Our Key Programs</h2>
+    <ul>
+        <li><strong>Digital Farm Management:</strong> Tools for tracking crops, weather, and farm inputs.</li>
+        <li><strong>Farmer Training & Workshops:</strong> Education on modern farming techniques.</li>
+        <li><strong>Market Access Support:</strong> Connecting farmers directly to buyers.</li>
+        <li><strong>Agri-Finance Guidance:</strong> Helping farmers access loans and savings groups.</li>
+    </ul>
+
+    <h2>Our Impact</h2>
+    <ul>
+        <li>✔ Supporting over <strong>Over 8000 farmers</strong> across Uganda</li>
+        <li>✔ Increased average farm yields by <strong>30%</strong></li>
+        <li>✔ Connected farmers to <strong>regional and national markets</strong></li>
+        <li>✔ Promoting climate-smart agriculture practices</li>
+    </ul>
+
+    <h2>Why Choose Us</h2>
+    <p>
+        We understand the challenges farmers face because we work directly with them. 
+        Our solutions are practical, affordable, and designed specifically for local conditions.
+    </p>
+
+    <button class="contact-btn" onclick="window.location.href='contactus.html'">
+        Get in Touch
+    </button>
+</div>
+ 
+    </body>
+
+
+
+     <footer  >
+        <p> &copy: JULIET'S AGRIC ENTERPRISE 2026| Empowering Farmers</p>
+    </footer>
+    
+</html>

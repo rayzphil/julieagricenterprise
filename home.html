@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JU;IET'S AGRICULTURAL ENTERPRISE</title>
+    <link rel="icon" href="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg">
+
+    <style>
+
+
+body {
+                        margin: 0;
+                            font-family: 'Segoe UI', Franklin Gothic Medium;
+                        
+                        
+                    }
+
+
+        .join{
+            background-color:  #1b5e20;
+            color:orange;
+            font-size: 15px;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        border-width: 1px;
+    height: 50px;
+width: 150px;
+            font-size: 15px;
+            font-weight: bold;
+transition: background-color 0.3s;
+        }
+            
+        
+
+        .join:hover{
+            background-color: #2e7d32;
+            opacity: 5px;
+        }
+  header{
+                        background-color: #1b5e20;
+                        color: red;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: space space-between;
+                        align-items: center;
+                    }
+                  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: maroon;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+          .hero {
+            background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+            background-size: cover;
+            background-position: center;
+            color: brown;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+.overlay {
+            background-color: rgba(0,0,0,0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .nav-logo {
+            float: none;
+        }
+
+        .flex-container {
+  display: flex;
+  flex-wrap: wrap;          /* allows multiple rows */
+  gap: 16px;                /* space between cards */
+  justify-content: center;  /* center everything */
+  padding: 10px;
+}
+
+.cardd {
+  flex: 1 1 200px;          /* responsive card size */
+  max-width: 220px;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+   background: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.cardd img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;        /* prevents stretching */
+  border-radius: 8px;
+}
+
+.cardd p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.cardd:hover{
+            transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(46,125,50,0.3);
+        }
+        
+.services h3, .news h3{
+    color: #2e7d32;
+}
+        .services .cards, .news .cards{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+            
+            
+             
+        .card{
+            background:whitesmoke;
+            padding: 20px;
+            width: 250px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(6, 196, 63, 0.566);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+             border: #2e7d32;
+             
+        }
+        .card:hover{
+            transform: translateY(-10PX);
+            box-shadow: 0 10px 25px rgba(o,o,o,0.2);
+        }
+        }
+        .impact{
+            background: #2e7d32;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        /*descendant class*/
+        .impact div{
+            margin: 20px;
+            font: 1.2em;
+        }
+        .about, .services, .impact, .news{
+            text-align: center;
+        }
+        #footer{
+                        background-color: #1b5e20;;
+                        color: greenyellow;
+                        text-align: center;
+                        padding: 15px;
+                        margin-top: 30px;
+                    }
+                    .join.clicked{
+                        background-color: gray;
+                        transform: scale(1.1);
+                    }
+
+                .popup, .learnMore{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height:100%;
+                    background: rgba(0,0,0,0.6);
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .popup-box, .learn-box{
+                    background-color:#e5f6df;
+                        margin: 15% auto;
+                        padding: 20px;
+                        border-radius: 8px;
+                        width: 300px;
+                        text-align: center;
+                        box-shadow: o 4px 8px rgba(0,0,0,0.2);
+                }
+                    .popup-box h3{
+                        margin: 10px 0;
+                        font-size: 20px;
+                        color: #333;
+                    }
+                    .popup-box p{
+                        font-size: 14px;
+                        color: #333333
+                        
+                    }
+
+                
+.popup-box button, .learn-box button{
+      margin-top: 25px;
+    background: linear-gradient(135deg, #2d5a27, #4caf50);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+.popup-box button, .learn-box button:hover{
+  transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+            
+@keyframes pop{
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+        
+        </style>
+
+        <script>
+            function openPopup() {
+                document.getElementById("popup").style.display = "block";
+            }
+            function closePopup() {
+                document.getElementById("popup").style.display = "none"
+            }
+
+            window.onclick = function(event){
+                let popup = document.getElementById("popup");
+                if (event.target ===popup){
+                    popup.style.display = "none"
+                }
+            }
+        </script>
+
+        
+
+    
+</head>
+<body>
+    <!--header and nav bar-->
+  <header>
+                             <div class="nav-logo">
+                  <img src="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg" width="100px" class="nav-logo"  ><br>
+                </div>
+                    <h1>JULIET'S AGRICULTURAL ENTERPRISE</h1>
+
+                    <nav>
+                
+                        <a href="HOME.html">Home</a>
+                        <a href="ABOUTS.html">About us</a>
+                       
+                        <a href="KNOWLEDGE.html">Knowledge Center</a>
+                        <a href="MARKET ACESSS.html">Market Acess</a>
+                        <a href="CONTACT.html">Contact Us</a>
+                    </nav>
+
+
+    </header>
+   <section class="hero">
+    <div class="overlay">
+        
+        <h2 class="para">Empowering Farmers across  the world</h2>
+        <p class="para">Supporting farmers through training, market access, and advocacy</p>
+    
+        <button onclick="openPopup()" class="join">JOIN US</button>
+        <button onclick="openPage()" class="join">LEARN MORE</button>
+        
+    </div>
+     </section>
+
+        <div id="popup" class="popup"> 
+            <div class="popup-box">
+                <h3>SUCCESS👍</h3>
+                <p>You will successfully join after registration!</p>
+                <a href="contactus.html"><button onclick="closePopup()">OK</button></a>
+  </div>
+                
+            </div>
+
+            <div id="learn" class="learnMore">
+                <div class="learn-box">
+                    <h3>Are you sure you want to learn more about us?😊!!</h3>
+                    <a href="knowledge.html"><button onclick="openPage()">✅YES</button></a>
+                    <button onclick="closePage()">❌NO</button>
+                </div>
+            </div>
+            <script>
+                function openPage(){
+                    document.getElementById("learn").style.display ="block"
+                    
+                }
+
+                function closePage(){
+                    document.getElementById("learn").style.display ="none"
+                } 
+                
+               
+            </script>
+      
+    
+
+  
+
+<!--About us section-->
+   <section class="about">
+                      
+    <h2 style="background-color:   #2e7d32; color: white;">About Us</h2>
+    <p><strong>Juliet's Agric Enterprise was established to improve agricultural productivity, sustainability, and livelihoods of all farmers across the world</strong></p>
+
+    <div class="flex-container"><b></b>
+  <div class="cardd">
+    <img src="images/download (1).jpg">
+    <p>Senior Project Manager</p>
+  </div>
+  
+  <div class="cardd">
+    <img src="images/download (2).jpg">
+    <p>Cheif Executive Officer</p>
+  
+</div>
+
+  <div class="cardd">
+    <img src="images/download (3).jpg">
+    <p>Field Operatives</p>
+  
+</div>
+
+  <div class="cardd">
+    <img src="images/download.jpg">
+    <p>Executive Director</p>
+  </div>
+   <div class="card">
+    <img src="images/download (6).jpg">
+    <p>Our Demonstration farm</p>
+  </div>
+</div>
+</div>
+
+   </section>
+
+   <!--Services section-->
+   <section class="services">
+    <h2 style="background-color: #2e7d32; color: white;"> Our Programs</h2>
+    <div class="cards">
+<div class="card">
+    <h3>Farmer Training</h3>
+    <p><b>Workshops on modern farming techniques like application of machines on farms</b></p>
+
+</div>
+<!--cards-->
+<div class="card"> 
+    <h3>Market Access</h3>
+    <p><b>Creating market for all farmers both locally and internationally</b></p>
+</div>
+
+<div class="card">
+    <h3>Agricultural Support</h3>
+    <p><b>Providing farm tools,quality seeds and advisory services</b></p>
+</div>
+
+<div class="card"><b>
+<h3>Advocacy</h3>
+<p>Helping farmers to fulfill their longterm goals</p></b>
+</div>
+    </div>
+   </section><br>
+
+   <!--Section for impact-->
+   <section class="impact">
+    <div>👨‍🌾Over 8000 Farmers Supported</div>
+    <div>📍Over 80 Districts Covered</div>
+    <div>💹Over 500 Market Connections</div>
+    <div>🌽Over 1000 Trainings</div>
+
+   </section>
+<!--section for new-->
+   <section class="news">
+    <h2>Latest Updates</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Maize Quality and Yield Improvement</h3>
+            <p>Helping farmers increase productivity.</p>
+        </div>
+        <div class="card">
+            <h3>Farm practice in Mbale</h3>
+            <p>Empowering farmers with knowledge.</p>
+        </div>
+    <div class="card">
+        <h3>Machinery operations and applications</h3>
+        <p>New opportunities for all farmers are provided</p>
+
+    </div>
+    <div class="card">
+        <h3>Workshops at Mbale playgrounds</h3>
+        <p>We always have monthly agric shows at Mbale playgrounds</p>
+    </div>
+    </div>
+   </section>
+    
+    
+
+   
+
+
+    <footer id="footer" >
+        <p> &copy 2026 JULIET'S AGRIC ENTERPRISE|Empowering All Ugandan farmers</p>
+    </footer>
+    
+    
+    
+</body>
+</html>

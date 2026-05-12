@@ -1,0 +1,249 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Contact us</title>
+                  <link rel="icon" href="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg">
+                <style>
+                    body {
+                        margin: 0;
+                      font-family: 'Segoe UI', Arial, sans-serif;
+                        background-color: #f5f5f0;
+                        
+                    }
+
+                header{
+                        background-color: #1b5e20;
+                        color: red;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: space space-between;
+                        align-items: center;
+                    }
+                  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #a5d6a7;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+                    .hero{
+                        background-image: url(images/create-agriculture-logo-designs.png);
+                        text-align: center;
+                        padding: 60px, 20px;
+                        color: black;
+                    }
+                    .hero h2 {
+                        font-size: 36px;
+                        background: rgba(0,0,0,0.5);
+                        display: inline-block;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                    }
+                    .container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 40px;
+                        gap: 30px;
+                    }
+                    .contact, .form{
+                        flex: 1;
+                        min-width: 300px;
+                        background: white;
+                        padding: 25px;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+                    }
+                    h3{
+                        color: #2e7d32
+                    }
+                    input, select, textarea {
+                        width: 100px;
+                        padding: 10px;
+                        margin: 10px 0;
+                        border-radius: 5px;
+                        border: 1px solid  #2e7d32;;
+                    }
+                    button{
+                        background-color: #2e7d32;
+                        color: maroon;
+                        padding: 12px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    button:hover{
+                        background-color: #2e7d32;
+                    }
+                    footer{
+                        background-color: #1b5e20;
+                        color: greenyellow;
+                        text-align: center;
+                        padding: 15px;
+                        margin-top: 30px;
+                    }
+
+                    .modal{
+                        display: none;
+                        position: fixed;
+                        z-index:1;
+                        left: 0; top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0,0,0,0.5);
+                    }
+                    .modal-content{
+                        background-color: #e5f6df;;
+                        margin: 15% auto;
+                        padding: 20px;
+                        border-radius: 8px;
+                        width: 300px;
+                        text-align: center;
+                        box-shadow: o 4px 8px rgba(0,0,0,0.2);
+
+                    }
+                    button{
+                        background-color: #4caf50;
+                        color: maroon;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+
+                
+                    
+                </style>
+
+               
+            </head>
+            <body>
+<!--Header section containing navigation bar-->
+                <header>
+                             <div class="nav-logo">
+                  <img src="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg" width="100px" class="nav-logo"  ><br>
+                </div>
+                    <h1>JULIET'S AGRICULTURAL ENTERPRISE</h1>
+
+                    <nav>
+                
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About us</a>
+                       
+                        <a href="knowledge.html">Knowledge Center</a>
+                        <a href="market acess.html">Market Acess</a>
+                        <a href="contactus.html">Contact Us</a>
+                    </nav>
+                </header>
+
+                <section class="hero">
+
+                    <h2 >Connect with farmers worldwide</h2>
+                </section>
+
+                <div class="container">
+
+                    <!--Contact info-->
+                    <div class="contact">
+                        <h3>Contact Us</h3>
+                        <p><strong>📍Address:</strong> Mbale, Uganda</p>
+                         <p><strong>☎️Phone:</strong> +256 749330133 / 0772228786</p>
+                          <p><strong>📧Email:</strong> julietagric@yahoo.com</p>
+                           <p>We are here to support farmers across the world. Reach out for partnerships, training, and membership.</strong></p>
+                            
+                    </div>
+
+                    <!--Registration form-->
+                    <div class="form">
+                    <h3>Register with us </h3>
+                    <form id ="registerForm" action="register.php" method="POST" onsubmit="return validateForm()">
+                        <label> Full Name: </label>
+                        <input type="text" id ="fullname" placeholder="Full Name" >
+                        <label> Tel:</label>
+                        <input type="tel" id="phone" placeholder="Phone Number" >
+                        <label> Email: </label>
+                        <input type="email"id ="email" placeholder="Email addresss">
+                        <label>District: </label>
+                        <input type="text"  id ="district"placeholder="District" >
+
+                        <label>Type of Farming</label>
+                        <select id ="farming" name="choose what you want to register">
+                        <option>Crops</option>
+                        <option>Livestock</option>
+                         <option>Poultry</option>
+                          <option>Horticulture</option>
+                           <option>Bee keeping</option>
+                        <option>Mixed Farming</option>
+</select>
+<label> Comments: </label>
+<textarea id="mwssage" rows="4" placeholder="Your Interests/ Message"></textarea>
+
+<button type="submit">Register</button>
+                    </form>
+</div>
+                </div>
+                <div id="customAlert" class="modal">
+
+                    <div class="modal-content">
+                        <p id="alertMessage"></p>
+                        <button onclick="closeModal()">OK</button>
+                    </div>
+                </div>
+
+                <script>
+                     document.getElementById("registerform").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let name = document.getElementById("fullname").value.trim();
+    let tel = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let district= document.getElementById("district").value.trim();
+    
+    if (name === ""){
+      alert("Farmer name is required");
+      return;
+    }
+    if (tel ===""){
+      alert("Please enter fulll number");
+      return;
+    }
+    if (email === ""){
+      alert("Email Address must be entered");
+      return;
+    }
+    if (district ===""){
+      alert("Location is required");
+      return;
+    }  
+    showAlert("You have been registered Successfully👍!");
+                        
+      document.getElementById("popup3").style.display = "flex";
+
+document.getElementById("registerForm").reset();
+  })
+ 
+
+                </script>
+
+                <footer> <p> &copy: Juliet's Agric Enterprise 2026|Empowering Farmers</p></footer>
+                
+            </body>
+            </html>

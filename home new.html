@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JULIET'S AGRICULTURAL ENTERPRISE</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: green;
+        }
+
+        header {
+            background-color: greenyellow;
+            color: red;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .overlay {
+            background-color: rgba(0,0,0,0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .join {
+            background-color: #1b5e20;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .join:hover {
+            background-color: #2e7d32;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 50px 25px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            transition: var(---);
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .impact {
+            background: #2e7d32;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-logo">
+                  <img src="images/360_F_1856842080_T0V7AnrVzlXV9iZmv5qoTWHTKIgmOTwM.jpg" width="100px" class="nav-logo"  ><br>
+                </div>
+    <h1>JULIET'S AGRICULTURAL ENTERPRISE</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Workshops</a>
+        <a href="#">Knowledge Center</a>
+        <a href="#">Market Access</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="overlay">
+        <h2>Empowering Farmers in Uganda</h2>
+        <p>Supporting farmers through training, market access, and advocacy</p>
+        <button class="join">JOIN US</button>
+        <button class="join">LEARN MORE</button>
+    </div>
+</section>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        Juliet's Agric Enterprise was established to improving agricultural productivity,
+        sustainability, and livelihoods of farmers across the world.
+    </p>
+</section>
+
+<section>
+    <h2>Our Programs</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Farmer Training</h3>
+            <p>Workshops on modern farming techniques</p>
+        </div>
+        <div class="card">
+            <h3>Market Access</h3>
+            <p>Connecting farmers to buyers across the world</p>
+        </div>
+        <div class="card">
+            <h3>Agricultural Support</h3>
+            <p>Providing tools and advisory services to farmers across the world</p>
+        </div>
+        <div class="card">
+            <h3>Advocacy</h3>
+            <p>Representing farmers' voices on international markets</p>
+        </div>
+    </div>
+</section>
+
+<section class="impact">
+    <div>👨‍🌾 Over 8000 Farmers Supported</div>
+    <div>📍 Over 80 Districts Covered</div>
+    <div>💹 Over 500 Market Connections</div>
+    <div>🌽 Over 1000s Trainings</div>
+</section>
+
+<section>
+    <h2>Latest Updates</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Maize Yield Improvement</h3>
+            <p>Helping farmers increase products productivity.</p>
+        </div>
+        <div class="card">
+            <h3>Farm practices in Mbale</h3>
+            <p>Empowering farmers with Farming knowledge.</p>
+        </div>
+        <div class="card">
+            <h3>Machinery operations and applications</h3>
+            <p>we employ and allow fellow farmers to join us at anytime.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; JULIET'S AGRIC ENTERPRISE 2026</p>
+</footer>
+
+</body>
+</html>
+
+
+

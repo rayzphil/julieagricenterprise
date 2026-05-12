@@ -1,0 +1,102 @@
+body{
+
+    background-color: rgb(196, 196, 196);
+        font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h3{
+
+    color: black;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    
+    
+    display: flex;
+    gap: 50px;
+    
+   
+
+}
+
+.best{
+border-radius: 30px;
+padding: 40px;
+justify-content: space-between;
+background-color: whitesmoke;
+}
+
+.good{
+    display: flex;
+
+    gap: 70px;
+}
+
+h1{
+    text-align: center;
+    background-color: darkgreen;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color:darkgreen;
+    padding: 25px;
+    color: white;
+    
+}
+
+  header{
+                        background-color: #1b5e20;
+                        color: #f5f5f0;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: space space-between;
+                        align-items: center;
+                    }
+                  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #a5d6a7;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+.stock{
+    display :flex;
+    gap: 40px;
+    text-align: center;
+}
+
+.snap{
+    background-color:whitesmoke;
+    border-radius: 15px;
+    transition: transform 0.3s;
+   
+}
+
+.snap:hover{
+    transform: translateY(-10PX);
+     box-shadow: 0 10px 25px rgba(o,o,o,0.2);
+    
+}
